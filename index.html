@@ -34,7 +34,7 @@
       display: flex;
       justify-content: center;
       gap: 30px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap; /* impedimos empilhamento */
     }
 
     nav a {
@@ -42,6 +42,7 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
+      white-space: nowrap; /* evita quebra de linha */
     }
 
     nav a:hover {
@@ -193,6 +194,7 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
+    /* Responsividade somente para outros elementos, mantendo nav horizontal */
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2rem;
@@ -203,10 +205,11 @@
         align-items: center;
       }
 
-      nav {
+      /* Removido: nav em coluna */
+      /* nav {
         flex-direction: column;
         gap: 10px;
-      }
+      } */
     }
   </style>
 </head>
@@ -214,7 +217,7 @@
 
   <header>
     <nav>
-      <a href="index.html">Iníciooo</a>
+      <a href="index.html">Início</a>
       <a href="termos_privacidade.html">Termos e Privacidade</a>
       <a href="termos_taxas.html">Termos e Taxas</a>
       <a href="politica_privacidade.html">Política de Privacidade</a>
