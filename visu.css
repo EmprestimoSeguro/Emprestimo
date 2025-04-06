@@ -1,26 +1,16 @@
-@media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-  
-    .cards {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav {
-      flex-direction: column; /* <-- Esse é o causador! */
-      align-items: center;
-      gap: 10px;
-      padding: 10px 0;
-    }
-  
-    nav a {
-      font-size: 14px;
-    }
-  
-    header {
-      padding: 10px 0;
-    }
-  }
-  
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* permite que eles quebrem pra próxima linha se necessário */
+  padding: 0 20px;  /* espaço lateral para não colar na borda */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+  flex-shrink: 1; /* permite que encolham em telas pequenas */
+}
