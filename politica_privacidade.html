@@ -103,6 +103,31 @@ header {
     footer p {
       margin: 5px 0;
     }
+/* Botão flutuante do WhatsApp */
+.whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 9999;
+    }
+
+    .whatsapp-fixed a {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+    }
+
+    .whatsapp-fixed img {
+      width: 24px;
+      height: 24px;
+    }
   </style>
 </head>
 <body>
@@ -115,36 +140,46 @@ header {
     </nav>
   </header>
 
-  <div class="container">
-    <h2>Sem rastreamento, sem cookies</h2>
-    <p>
-      Diferente de muitos sites que acompanham cada clique do visitante para gerar anúncios, estatísticas ou criar perfis de consumo, nós optamos por um caminho mais simples e respeitoso: não coletamos nenhum dado de navegação. Não usamos cookies, web beacons, pixels ou qualquer tipo de tecnologia que registre o que você faz por aqui. A sua navegação é completamente livre, privada e anônima. Acreditamos que você deve se sentir seguro enquanto busca informações.
-    </p>
+<div class="container">
+  <h2>Sem rastreamento, sem cookies</h2>
+  <p>
+    Diferente de muitos sites que acompanham cada clique do visitante para gerar anúncios, estatísticas ou criar perfis de consumo, nós optamos por um caminho mais simples e respeitoso: não coletamos nenhum dado de navegação. Não usamos cookies, web beacons, pixels ou qualquer tipo de tecnologia que registre o que você faz por aqui. A sua navegação é completamente livre, privada e anônima. Acreditamos que você deve se sentir seguro enquanto busca informações.
+  </p>
+
+  <h2>Nenhuma informação é salva</h2>
+  <p>
+    Ao clicar no botão do WhatsApp em nosso site, você será automaticamente redirecionado para o aplicativo ou versão web oficial do WhatsApp, onde poderá iniciar uma conversa diretamente com um atendente da ABV Contratos Financeiros. Nenhuma informação sua — como número de telefone, localização, horário de acesso ou qualquer outro dado — é armazenada em nossos sistemas. O contato só acontece se você decidir enviar uma mensagem. Não mantemos registros, listas, nem realizamos qualquer tipo de captura de dados sem consentimento.
+  </p>
+
+  <h2>Transparência sempre</h2>
+  <p>
+    Prezamos por uma comunicação clara, honesta e direta. Por isso, todas as nossas páginas e políticas foram escritas de forma acessível, sem jargões técnicos, termos complexos ou letras miúdas. Nosso objetivo é que qualquer pessoa, de qualquer idade ou nível de conhecimento, consiga entender exatamente como funcionamos. Acreditamos que o respeito ao usuário começa pela clareza com que nos apresentamos.
+  </p>
+
+  <h2>Sua segurança é essencial</h2>
+  <p>
+    Quando você escolhe conversar conosco, pode ter certeza de que estará falando diretamente com uma pessoa real, treinada e autorizada a representar a ABV Contratos Financeiros. Não utilizamos robôs, automações ou repassamos seus dados a terceiros. Todo o atendimento é feito de forma ética, segura e com atenção total ao que você precisa. Seu tempo e sua privacidade são prioridades para nós — e nos comprometemos a manter esse padrão em todas as etapas do atendimento.
+  </p>
+</div>
+
+
+
+<footer>
+  <p><strong>Creditas Soluções Financeiras Ltda</strong></p>
+  <p>CNPJ: 17.770.708/0001-24</p>
+  <p>Atendimento de segunda a sábado, das 08h às 19h</p>
+  <p style="margin-top: 10px; font-style: italic;">Estamos prontos para te ajudar. Fale com um de nossos atendentes agora mesmo!</p>
+</footer>
+
   
-    <h2>Nenhuma informação é salva</h2>
-    <p>
-      Ao clicar no botão do WhatsApp em nosso site, você será automaticamente redirecionado para o aplicativo ou versão web oficial do WhatsApp, onde poderá iniciar uma conversa diretamente com um atendente da ABV Contratos Financeiros. Nenhuma informação sua — como número de telefone, localização, horário de acesso ou qualquer outro dado — é armazenada em nossos sistemas. O contato só acontece se você decidir enviar uma mensagem. Não mantemos registros, listas, nem realizamos qualquer tipo de captura de dados sem consentimento.
-    </p>
-  
-    <h2>Transparência sempre</h2>
-    <p>
-      Prezamos por uma comunicação clara, honesta e direta. Por isso, todas as nossas páginas e políticas foram escritas de forma acessível, sem jargões técnicos, termos complexos ou letras miúdas. Nosso objetivo é que qualquer pessoa, de qualquer idade ou nível de conhecimento, consiga entender exatamente como funcionamos. Acreditamos que o respeito ao usuário começa pela clareza com que nos apresentamos.
-    </p>
-  
-    <h2>Sua segurança é essencial</h2>
-    <p>
-      Quando você escolhe conversar conosco, pode ter certeza de que estará falando diretamente com uma pessoa real, treinada e autorizada a representar a ABV Contratos Financeiros. Não utilizamos robôs, automações ou repassamos seus dados a terceiros. Todo o atendimento é feito de forma ética, segura e com atenção total ao que você precisa. Seu tempo e sua privacidade são prioridades para nós — e nos comprometemos a manter esse padrão em todas as etapas do atendimento.
-    </p>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <div class="whatsapp-fixed">
+    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      WhatsApp
+    </a>
   </div>
-  
 
-
-  <footer>
-    <p>ABV CONTRATOS FINANCEIROS LTDA</p>
-    <p>abvfinaceiro@gmail.com</p>
-    <p>CNPJ: 57.946.156/0001-87</p>
-    <p>Horário de Atendimento: Segunda à Sexta das 08:30 às 19:00</p>
-    <p>ABV CONTRATOS FINANCEIROS LTDA - Copyright ® 2025 - Todos os Direitos Reservados.</p>
-  </footer>
 </body>
 </html>
