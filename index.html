@@ -34,7 +34,7 @@
       display: flex;
       justify-content: center;
       gap: 30px;
-      flex-wrap: nowrap; /* impedimos empilhamento */
+      flex-wrap: nowrap;
     }
 
     nav a {
@@ -42,7 +42,7 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
-      white-space: nowrap; /* evita quebra de linha */
+      white-space: nowrap;
     }
 
     nav a:hover {
@@ -194,7 +194,13 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
-    /* Responsividade somente para outros elementos, mantendo nav horizontal */
+    .container {
+      padding: 80px 20px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2rem;
@@ -204,12 +210,6 @@
         flex-direction: column;
         align-items: center;
       }
-
-      /* Removido: nav em coluna */
-      /* nav {
-        flex-direction: column;
-        gap: 10px;
-      } */
     }
   </style>
 </head>
@@ -233,46 +233,50 @@
     <img src="capa.jpg" alt="Foto de capa" style="width: 100%; max-height: 400px; object-fit: cover;">
   </div>
 
-  <section class="cta">
-    <h3>Solicite seu Empréstimo Agora</h3>
-    <p>Condições acessíveis, atendimento rápido e sem burocracia.</p>
-    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Clique aqui para falar no WhatsApp</a>
-  </section>
+  <div class="container">
 
-  <section class="content">
-    <h2>Depoimento de Cliente</h2>
-    <p>Veja como ajudamos nossos clientes a conquistar seus objetivos!</p>
-    <video controls autoplay muted loop 
-      style="
-        width: 70%;
-        max-width: 400px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        display: block;
-        margin: 0 auto;">
-      <source src="cliente satisfeito.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo HTML5.
-    </video>
-  </section>
+    <section class="cta">
+      <h3>Solicite seu Empréstimo Agora</h3>
+      <p>Condições acessíveis, atendimento rápido e sem burocracia.</p>
+      <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Clique aqui para falar no WhatsApp</a>
+    </section>
 
-  <section class="content">
-    <h2>O que oferecemos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Contratos Seguros</h3>
-        <p>Documentação clara, revisão de cláusulas e suporte ao cliente.</p>
+    <section class="content">
+      <h2>Depoimento de Cliente</h2>
+      <p>Veja como ajudamos nossos clientes a conquistar seus objetivos!</p>
+      <video controls autoplay muted loop 
+        style="
+          width: 70%;
+          max-width: 400px;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+          display: block;
+          margin: 0 auto;">
+        <source src="cliente satisfeito.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </section>
+
+    <section class="content">
+      <h2>O que oferecemos</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Contratos Seguros</h3>
+          <p>Documentação clara, revisão de cláusulas e suporte ao cliente.</p>
+        </div>
+        <div class="card">
+          <h3>Privacidade de Dados</h3>
+          <p>Seus dados são protegidos com os mais altos padrões de segurança.</p>
+        </div>
+        <div class="card">
+          <h3>Transparência nas Taxas</h3>
+          <p>Sem taxas ocultas. Saiba exatamente o que está contratando.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Privacidade de Dados</h3>
-        <p>Seus dados são protegidos com os mais altos padrões de segurança.</p>
-      </div>
-      <div class="card">
-        <h3>Transparência nas Taxas</h3>
-        <p>Sem taxas ocultas. Saiba exatamente o que está contratando.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+
+  </div>
 
   <footer>
     <p>ABV CONTRATOS FINANCEIROS LTDA</p>
